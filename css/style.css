@@ -348,6 +348,13 @@ html footer, body footer {
   color: white;
 }
 
+html footer a, body footer a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
 html footer .upper, body footer .upper {
   padding: 3rem;
 }

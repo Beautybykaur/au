@@ -381,6 +381,12 @@ html,body{
         width: 100%;
         background-color: $sc;
         color:white;
+        a {
+                color: white;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+            }
         
         .upper{
             padding: 3rem;
