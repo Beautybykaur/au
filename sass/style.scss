@@ -26,10 +26,25 @@ html,body{
         background-color: transparent;
         color:black;
         z-index: 100;
-        .logo-img{
-            height: 70px;
+        // .logo-img{
+        //     height: 70px;
+        // }
+        
+       .navbar-brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        img{
+            height: 40px;
         }
-       
+
+        .lg-cont{
+            font-family: 'Great Vibes', cursive;
+            padding: 4px 0rem 0px 5px;
+            font-size: larger;
+        }
+       }
         &.sticky {
             position: fixed;
             top: 0;
@@ -409,12 +424,29 @@ html,body{
                         font-size: 22px;
                         margin-right: 1rem;
                     }
+                    i.bi.bi-caret-right-fill {
+                        font-size: 12px;
+                    }
                 }
             }
+            .logo-wrapper{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                p{
+                    font-size: xx-large;
+                    margin: 0rem 0rem;
+                    font-family: 'Great Vibes', cursive;
+                    padding: 0.5rem 0rem;
+                }
+                img{
+                    width: 150px;
+                }
+
+            }
         }
-        .lower{
-            background-color:$sc
-        }
+        
     }
 }
 @media (max-width: 767.98px) { 
@@ -597,5 +629,51 @@ html,body{
     }
     footer{
         font-size: 12px;
+        .logo-wrapper{
+            p{
+                font-size: x-large !important;
+                margin: 0rem 0rem;
+                font-family: 'Great Vibes', cursive;
+                padding: 0.5rem 0rem;
+            }
+            img{
+                width: 100px  !important
+            }
+
+        }
     }
  }
+//  .animation {
+//     opacity: 0;
+//     transform: translateY(300px);
+//     transition: all 0.7s ease-out;
+//     transition-delay: 0.1s;
+
+// }
+.ani-right{
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.1s;
+
+}
+.ani-left{
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.1s;
+}
+.ani-down{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.1s;
+}
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
+}
+.scroll-animation-dn {
+    opacity: 1;
+    transform: translateY(0);
+}

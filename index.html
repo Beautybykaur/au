@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty by Kaur</title>
   <link rel="stylesheet" href="css/style.css">
-  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <meta name="google-site-verification" content="Io36KJY0Ixztj0q9Ax5LzljOfUUawznpJRlfN1PM59k" />
   <meta name="description" content="Experience the transformative
    power of beauty with Beauty by Kaur, where our world-class beauty services
@@ -30,14 +33,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" href="./media/favicon_io/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon_io/apple-touch-icon.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="wrapper">
   <nav id="navbar1" class="nav navbar navbar-expand-lg ">
     <div class="container-md">
-      <a class="navbar-brand" href="#">
-        <img class="logo-img"src="./media/logofinal.png">
+      <a class="navbar-brand"  href="#">
+        <img class="logo-img d-none" id="light-logo" src="./media/images/logos/inverted.png">
+        <img class="logo-img" id="dark-logo" src="./media/images/logos/head.png">
+        <div class="lg-cont">Beauty by Kaur</div>
         <!-- <img src="/media/images/main-img.jpg"> -->
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,7 +93,7 @@
           <div class="col-md-0 "></div>
           <div class="col-md-13 ">
             <div class="wrapper">
-              <h1  >"Transform your<br> look, transform <br>your life."</h1>
+              <h1 class="animate__animated animate__bounce" >"Transform your<br> look, transform <br>your life."</h1>
                 <p>Discover the power of beauty and unlock your true<br> potential with our world-class beauty services.</p>
               <button  onclick="location.href = 'https://www.fresha.com/book-now/beauty-by-kaur-fpgr3y41/all-offer?id=926367&pId=871993'" class="booking-btn btn btn-lg">Book an Appointment</button></div>
             
@@ -101,8 +108,8 @@
       <img class="ils1" src="./media/Illustrations/Illustrations/04.png">
         <img class="ils2" src="./media/Illustrations/Illustrations/05.png">
       <div class="clientFlex mt-3 mb-3 container">
-        <div class="grid">
-          <p class="name">Gurmeet Kaur</p>
+        <div class="grid ani-left  ">
+          <p class="name ">Gurmeet Kaur</p>
             <p>As a highly experienced professional in the skincare 
               industry with over 7 years of dedicated service, I take 
               great pride in my extensive knowledge and expertise in providing top-notch
@@ -119,12 +126,12 @@
     </section>
     <section class="section3 pt-3" id="section3">
       <div class="sheading mb-5 "><h1>Why to choose us</h1></div>
-      <div class=" subsection one   ">
+      <div class=" subsection  one   ">
         <img class="ils1" src="./media/Illustrations/Illustrations/04.png">
 
         <div class="container-md">
           <div class="row ">
-            <div class="col-md-8"><h2 class="heading">WAXING</h2>
+            <div class="col-md-8 ani-left"><h2 class="heading">WAXING</h2>
             <p >
 
               Waxing is a popular hair removal method that also
@@ -139,14 +146,14 @@
           </div>
         </div>
       </div>
-      <div class=" subsection second   ">
+      <div class=" subsection  second   ">
         <img class="ils1" src="./media/Illustrations/Illustrations/05.png">
         
         <div class="container-md">
           <div class="row">
             
             <div class="col-md-4 text-center "><img class="img-fluid " src="./media/images/pexels-cottonbro-studio-3993449.jpg"></div>
-            <div class="col-md-8"><h2 class="heading">FACIALS</h2>
+            <div class="col-md-8 ani-right"><h2 class="heading">FACIALS</h2>
               <p > 
                 A facial is a beauty treatment that involves deep cleansing, exfoliation, 
                 and moisturization of the face. It is typically performed by a trained aesthetician 
@@ -160,11 +167,11 @@
           </div>
         </div>
       </div>
-      <div class=" subsection three ">
+      <div class=" subsection  three ">
         <img class="ils1" src="./media/Illustrations/Illustrations/01.png">
         <div class="container-md">
           <div class="row ">
-            <div class="col-md-8"><h2 class="heading">PEELS</h2>
+            <div class="col-md-8 ani-left"><h2 class="heading">PEELS</h2>
             <p >
 
               A chemical peel is a cosmetic treatment in which 
@@ -187,8 +194,8 @@
       <div class="sheading brown mb-5 "><h1>Services provided by kaur</h1></div>
       <img class="ils2" src="./media/Illustrations/Illustrations/01.png">
       
-      <div class="nav-wrapper container-md">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <div class="nav-wrapper  ani-down container-md">
+        <ul class="nav nav-pills  mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
               <div id="pills-waxing-tab"   class="nav-link active" src="./media/icons/depilation.png" data-bs-toggle="pill" data-bs-target="#pills-waxing" type="button" role="tab" aria-controls="pills-waxing" aria-selected="true">
               
@@ -611,22 +618,27 @@
     <footer>
       <div class="upper">
         <div class="row">
-          <div class="col-md-4 row">
+          <div class="col-md-4 col-sm-7">
+            <div class="logo-wrapper">
+              <img class="logo-img " src="./media/images/logos/inverted.png"><p>Beauty by Kaur</p>
+
+            </div>
            
-          <img class="logo-img" style="height:150px;width:fit-content" src="./media/logofinal.png">
+          <!-- <img class="logo-img" style="height:150px;width:fit-content" src="./media/logofinal.png"> -->
           
              
           </div>
-          <div class="col-md-2 ">
+          <div class="col-md-2 col-sm-5 ">
             <ul>
               <li>Navigation</li>
-              <li ><a href="#section1">Home</a></li>
-              <li ><a href="#section2">Your guide</a></li>
-              <li ><a href="#section3">Why us</a></li>
-              <li ><a href="#section4">Services</a></li>
+              
+              <li ><a href="#section1"><i class="bi bi-caret-right-fill"></i>Home</a></li>
+              <li ><a href="#section2"><i class="bi bi-caret-right-fill"></i>Your guide</a></li>
+              <li ><a href="#section3"><i class="bi bi-caret-right-fill"></i>Why us</a></li>
+              <li ><a href="#section4"><i class="bi bi-caret-right-fill"></i>Services</a></li>
             </ul>
           </div>
-          <div class="col-md-3 ">
+          <div class="col-md-3  col-sm-6">
             <ul>
               <li>Contact Us</li>
               <li><i class="bi bi-telephone"></i>+61 415 835 351</li>
@@ -635,7 +647,7 @@
               <li><i class="bi bi-geo-alt-fill"></i>Wintergreen crescent, Treeby, 6164 (WA)</li>
             </ul>
           </div>
-          <div class="col-md-3 ">
+          <div class="col-md-3 col-sm-6">
             <ul>
               <li>Social Media</li>
               
@@ -660,9 +672,13 @@
         if($(this).scrollTop() > 100){
             $('.nav').addClass('sticky')
             $('.content').addClass('addpd')
+            $('#light-logo').removeClass('d-none')
+            $('#dark-logo').addClass('d-none')
         } else{
             $('.nav').removeClass('sticky')
             $('.content').removeClass('addpd')
+            $('#dark-logo').removeClass('d-none')
+            $('#light-logo').addClass('d-none')
         }
     });
     $(document).ready(function(){
@@ -674,7 +690,71 @@
         slidesToScroll: 3
       });
 */    });
-    
+const the_animation = document.querySelectorAll('.ani-left')
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('scroll-animation')
+        }
+            else {
+                entry.target.classList.remove('scroll-animation')
+            }
+        
+    })
+},
+   { threshold: 0.1
+   });
+//
+  for (let i = 0; i < the_animation.length; i++) {
+   const elements = the_animation[i];
+
+    observer.observe(elements);
+  } 
+
+  const the_animation1 = document.querySelectorAll('.ani-right')
+
+const observer1 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('scroll-animation')
+        }
+            else {
+                entry.target.classList.remove('scroll-animation')
+            }
+        
+    })
+},
+   { threshold: 0.1
+   });
+//
+  for (let i = 0; i < the_animation1.length; i++) {
+   const elements1 = the_animation1[i];
+
+    observer1.observe(elements1);
+  } 
+  const the_animation2 = document.querySelectorAll('.ani-down')
+
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('scroll-animation-dn')
+        }
+            else {
+                entry.target.classList.remove('scroll-animation-dn')
+            }
+        
+    })
+},
+   { threshold: 0.1
+   });
+//
+  for (let i = 0; i < the_animation2.length; i++) {
+   const elements2 = the_animation2[i];
+
+    observer2.observe(elements2);
+  } 
+
 
       </script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

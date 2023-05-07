@@ -23,8 +23,20 @@ html #navbar1, body #navbar1 {
   z-index: 100;
 }
 
-html #navbar1 .logo-img, body #navbar1 .logo-img {
-  height: 70px;
+html #navbar1 .navbar-brand, body #navbar1 .navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html #navbar1 .navbar-brand img, body #navbar1 .navbar-brand img {
+  height: 40px;
+}
+
+html #navbar1 .navbar-brand .lg-cont, body #navbar1 .navbar-brand .lg-cont {
+  font-family: 'Great Vibes', cursive;
+  padding: 4px 0rem 0px 5px;
+  font-size: larger;
 }
 
 html #navbar1.sticky, body #navbar1.sticky {
@@ -383,8 +395,26 @@ html footer .upper ul li i, body footer .upper ul li i {
   margin-right: 1rem;
 }
 
-html footer .lower, body footer .lower {
-  background-color: #694F40;
+html footer .upper ul li i.bi.bi-caret-right-fill, body footer .upper ul li i.bi.bi-caret-right-fill {
+  font-size: 12px;
+}
+
+html footer .upper .logo-wrapper, body footer .upper .logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+html footer .upper .logo-wrapper p, body footer .upper .logo-wrapper p {
+  font-size: xx-large;
+  margin: 0rem 0rem;
+  font-family: 'Great Vibes', cursive;
+  padding: 0.5rem 0rem;
+}
+
+html footer .upper .logo-wrapper img, body footer .upper .logo-wrapper img {
+  width: 150px;
 }
 
 @media (max-width: 767.98px) {
@@ -523,4 +553,44 @@ html footer .lower, body footer .lower {
   footer {
     font-size: 12px;
   }
+  footer .logo-wrapper p {
+    font-size: x-large !important;
+    margin: 0rem 0rem;
+    font-family: 'Great Vibes', cursive;
+    padding: 0.5rem 0rem;
+  }
+  footer .logo-wrapper img {
+    width: 100px  !important;
+  }
+}
+
+.ani-right {
+  opacity: 0;
+  transform: translateX(300px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.1s;
+}
+
+.ani-left {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.1s;
+}
+
+.ani-down {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.1s;
+}
+
+.scroll-animation {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scroll-animation-dn {
+  opacity: 1;
+  transform: translateY(0);
 }
